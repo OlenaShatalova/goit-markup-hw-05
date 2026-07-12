@@ -51,7 +51,7 @@
 
 /* subscribe-footer  */
 .subscribe-footer {
-  margin-left: 80px;
+  margin-left: auto;
 }
 .subscribe-text {
   margin-bottom: 16px;
@@ -76,6 +76,15 @@
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-input::placeholder {
+  color: #fff;
+}
+
+.subscribe-input:focus {
+  border-color: #31d0aa;
 }
 
 .subscribe-button {
@@ -96,6 +105,11 @@
   line-height: 1.5;
   color: #fff;
   cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.subscribe-button:hover,
+.subscribe-button:focus {
+  background-color: #31d0aa;
 }
 .icon-subscribe {
   margin-left: 16px;
